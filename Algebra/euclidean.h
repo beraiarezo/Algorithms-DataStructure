@@ -1,11 +1,11 @@
 #ifndef EUCLIDEAN_H
 #define EUCLIDEAN_H
 
-int recursiveGcd(int a, int b) {
+long long recursive_gcd(long long a, long long b) {
   return b ? recursiveGcd(b, a%b) : a;
 }
 
-int linearGcd(int a, int b) {
+long long linear_gcd(long long a, long long b) {
   while(b) {
     a %= b;
     std::swap(a, b);
