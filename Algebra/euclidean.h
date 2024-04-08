@@ -5,7 +5,7 @@ long long recursive_gcd(long long a, long long b) {
   return b ? recursiveGcd(b, a%b) : a;
 }
 
-long long linear_gcd(long long a, long long b) {
+long long iter_gcd(long long a, long long b) {
   while(b) {
     a %= b;
     std::swap(a, b);
